@@ -18,7 +18,7 @@
       <h1 class="title">Book library</h1>
       <form id="book-form" class="book-form" action="#">
         <div class="form__book">
-          <label for="book">Book</label>
+          <label for="book">Book name</label>
           <input type="text" id="book" name="book" required />
         </div>
         <div class="form__author">
@@ -28,41 +28,18 @@
         <div class="form__status">
           <label for="status">Status</label>
           <select name="status" id="status">
-            <option value="read">Read</option>
-            <option value="unread">Unread</option>
+            <option value="">Unread</option>
+            <option value="1">Read</option>
           </select>
         </div>
-        <button type="submit" class="btn btn--submit">Submit</button>
+        <button type="submit" class="btn btn--submit">Add</button>
       </form>
-
-      <div class="books-list">
-        <div class="headers">
-          <span class="header">Name</span>
-          <span class="header">Author</span>
-          <span class="header">Status</span>
-        </div>
-
-        <div class="book">
-          <span class="book__name">Naruto</span>
-          <span class="book__author">Masashi Kishimoto</span>
-          <button class="btn btn--status">Read</button>
-          <button class="btn btn--delete">Delete</button>
-        </div>
-
-        <div class="book">
-          <span class="book__name">Naruto</span>
-          <span class="book__author">Masashi Kishimoto</span>
-          <button class="btn btn--status">Read</button>
-          <button class="btn btn--delete">Delete</button>
-        </div>
-
-        <div class="book">
-          <span class="book__name">Naruto</span>
-          <span class="book__author">Masashi Kishimoto</span>
-          <button class="btn btn--status">Read</button>
-          <button class="btn btn--delete">Delete</button>
-        </div>
+      <div class="headers">
+        <span class="header">Book name</span>
+        <span class="header">Author</span>
+        <span class="header">Status</span>
       </div>
+      <div class="books-list"></div>
     </div>
 
     <script src="index.pack.js"></script>

@@ -49,7 +49,7 @@ LAYOUT
 
 .container {
   width: 90%;
-  max-width: 500px;
+  max-width: 700px;
   margin: 1em auto;
 }
 
@@ -108,7 +108,7 @@ input[type="text"]:hover {
 .headers {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
-  grid-gap: 6px;
+  grid-gap: 15px;
   align-items: center;
 }
 
