@@ -1,7 +1,5 @@
 const booksList = document.querySelector(".books-list");
 const bookForm = document.querySelector(".book-form");
-const statusBtn = document.querySelector(".btn--status");
-const deleteBtn = document.querySelector(".btn--delete");
 let myLibrary = [];
 
 /* EVENTS */
@@ -53,7 +51,7 @@ function addBookToLibrary(e) {
 
 function deleteBook(index) {
   myLibrary.splice(index, 1);
-  
+
   displayBooks();
 }
 
